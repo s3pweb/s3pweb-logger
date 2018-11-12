@@ -1,0 +1,27 @@
+{
+   "name": "s3pweb-logger",
+
+    "logger": {
+    "source": false,
+    "console": {
+      "enable": true,
+      "level": "debug"
+    },
+    "file": {
+      "enable": true,
+      "level": "info",
+      "dir": "./logs"
+    },
+    "server": {
+      "enable": true,
+      "level": "trace",
+      "url": "0.0.0.0",
+      "port": "19998",
+      "type": "elk"
+    },
+    "ringBuffer": {
+      "enable": true,
+      "size": 50
+    }
+  }
+}

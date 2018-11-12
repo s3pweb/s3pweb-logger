@@ -1,0 +1,27 @@
+{
+    "logger": {
+      "source": false,
+      "console": {
+        "enable": true,
+        "level": "debug"
+      },
+      "file": {
+        "enable": false,
+        "level": "info",
+        "dir": "./logs"
+      },
+      "server": {
+        "enable": true,
+        "level": "trace",
+        "url": "x.x.x.x",
+        "port": "9998",
+        "type": "elk",
+        "X-OVH-TOKEN": "xxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"        
+      },
+      "ringBuffer": {
+        "enable": true,
+        "size": 50
+      }
+    }
+  }
+  

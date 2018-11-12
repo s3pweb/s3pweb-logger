@@ -1,39 +1,27 @@
-var test = require('ava');
-var log = require('../index').Logger
+const test = require('ava');
+const Logger = require('..')
 
-var Hook = require('console-hook');
+let log = Logger.getChild('test')
 
-test.before(t => {
+const Hook = require('console-hook');
+
+
+test.before(() => {
 	console.log('before: ')
 });
 
-test('test metric for info', (t) => {
 
-    var myHook = Hook().attach((method, args) => {
-        
-        t.is(method == 'log',true)
-        t.is(args[0] == 'INFO: toto',true)
-        
-      });
+test('test basic', (t) => {
 
-      log.info('toto')  
+   log.trace('toto')  
+   log.debug('toto')  
+   log.info('toto')  
+   log.warn('toto')  
+   log.error('toto')  
+   log.fatal('toto')  
 
-      myHook.detach()
+   t.pass()
 
-      t.is(log.metrics().info,1)      
-	
-});
-
-test('test metric for warm', (t) => {
-
-    var myHook = Hook().attach((method, args) => {
-        console.log('2',method,args)
-      });
-
-    log.warm('toto')
-
-    myHook.detach()
-
-    t.is(log.metrics().warm, 1)
+   
 	
 });
