@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=localhost nyc ava"
+    "linter": "./node_modules/.bin/standard --fix --verbose",
+    "test": "npm run linter && NODE_ENV=localhost nyc ava"
   },
   "author": "",
   "license": "ISC",
@@ -21,11 +22,6 @@
     "console-hook": "0.0.2",
     "eslint-config-prettier": "3.3.0",
     "nyc": "13.1.0",
-    "xo": "0.23.0"
-  },
-  "xo": {
-    "extends": [
-      "prettier"
-    ]
+    "standard": "12.0.1"    
   }
 }
