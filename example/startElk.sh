@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 
 docker network create elk
 docker rm elasticsearch -f

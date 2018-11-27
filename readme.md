@@ -2,7 +2,7 @@ This is a simple lib to log message
 
 # Installation
 
-npm install s3pweb-logger
+    npm install s3pweb-logger
 
 # Config
 
@@ -10,7 +10,7 @@ Configurations are stored in configuration files within your application, and ca
 
 1. Create a config folder
 
-2. Create a file(s) with the name of your environnement(s) like test.json 
+2. Create a file(s) with the name of your environment(s) like test.json 
 
 3. Paste this configuration template :
 
@@ -50,7 +50,6 @@ Configurations are stored in configuration files within your application, and ca
 # Example :
 
 ```js
-
 const log = require('s3pweb-logger').logger
 const { logger } = require('s3pweb-logger')
 
@@ -65,7 +64,7 @@ child.info('one message from child')
 
 Pass the name of your environnement with NODE_ENV=xxxx before node
 
-```js
+```bash
 NODE_ENV=test node example/example.js
 ```
 
@@ -74,11 +73,9 @@ NODE_ENV=test node example/example.js
 To start a ELK stack on docker :
 
 ```bash
-
 chmod +x example/startElk.sh 
 
 ./example/startElk.sh
-
 ```
 
 Open your favorite browser : http://localhost:5601
