@@ -1,0 +1,34 @@
+version: "3.6"
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:5.6.12
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    ports:
+        - "9200:9200/tcp"
+
+  curator:
+    image: stefanprodan/es-curator-cron
+    environment:
+      - "PERIOD=daily"
+      - "KEEP_DAYS=1"
+      - "INDEX_PREFIX=logstash"
+    command: "--host elasticsearch --port 9200"
+
+  logstash:
+    command: sh -c "logstash -e 'input { tcp { port => \"9998\" codec => json } } output { elasticsearch { hosts => \"elasticsearch\" } }'"
+    image: logstash:5.6.12
+    ports:
+        - "9998:9998/tcp"
+
+  kibana:
+     image: kibana:5.6.12
+     environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+     ports:
+      - "5601:5601"
+
+volumes:
+    elasticsearch_data:
