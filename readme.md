@@ -78,6 +78,11 @@ chmod +x example/startElk.sh
 ./example/startElk.sh
 ```
 
+Or with docker compose :
+```bash
+docker-compose -f example/docker-stack.yaml up -d
+```
+
 Open your favorite browser : http://localhost:5601
 
 Create an index with just * (replace logstash-* by *)
