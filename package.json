@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "linter": "./node_modules/.bin/standard --fix --verbose",
-    "test": "npm run linter && NODE_ENV=localhost nyc ava"
+    "test": "npm run linter && cross-env NODE_ENV=localhost nyc ava"
   },
   "author": "",
   "license": "ISC",
