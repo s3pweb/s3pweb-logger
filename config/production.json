@@ -8,7 +8,8 @@
     "file": {
       "enable": false,
       "level": "info",
-      "dir": "./logs"
+      "dir": "./logs",
+      "addHostnameToPath": false
     },
     "server": {
       "enable": true,

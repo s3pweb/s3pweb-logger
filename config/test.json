@@ -7,9 +7,10 @@
       "level": "debug"
     },
     "file": {
-      "enable": false,
-      "level": "info",
-      "dir": "./logs"
+      "enable": true,
+      "level": "trace",
+      "dir": "./logs",
+      "addHostnameToPath": false
     },
     "server": {
       "enable": false,

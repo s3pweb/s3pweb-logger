@@ -9,7 +9,8 @@
     "file": {
       "enable": true,
       "level": "info",
-      "dir": "./logs"
+      "dir": "./logs",
+      "addHostnameToPath": false
     },
     "server": {
       "enable": true,
