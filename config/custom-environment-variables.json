@@ -1,0 +1,26 @@
+{
+  "name": "APP_NAME",
+  "logger": {
+    "source": "LOGGER_SOURCE",
+    "console": {
+      "enable": "LOGGER_CONSOLE_ENABLE",
+      "level": "LOGGER_CONSOLE_LEVEL"
+    },
+    "file": {
+      "enable": "LOGGER_FILE_ENABLE",
+      "level": "LOGGER_FILE_LEVEL",
+      "dir": "LOGGER_FILE_DIR"
+    },
+    "server": {
+      "enable": "LOGGER_SERVER_ENABLE",
+      "level": "LOGGER_SERVER_LEVEL",
+      "url": "LOGGER_SERVER_URL",
+      "port": "LOGGER_SERVER_PORT",
+      "type": "LOGGER_SERVER_TYPE"
+    },
+    "ringBuffer": {
+      "enable": "LOGGER_BUFFER_ENABLE",
+      "size": "LOGGER_BUFFER_SIZE"
+    }
+  }
+}
