@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 - (dependencies) removed unused console-hook
 ### Security
+- (dependencies) updated config to 3.2.4
 
 ## [1.0.1] - 2019-07-02
 ### Security
