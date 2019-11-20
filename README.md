@@ -1,5 +1,16 @@
 This is a simple lib to log message
 
+## Latest release 1.0.2
+
+### Changed
+- (npm) published files are now whitelisted in package.json
+- (style) used standard linter
+- (npm) changed package name to @s3pweb/s3pweb-logger
+### Removed
+- (dependencies) removed unused console-hook
+### Security
+- (dependencies) updated config to 3.2.4
+
 # Installation
 
     npm install s3pweb-logger

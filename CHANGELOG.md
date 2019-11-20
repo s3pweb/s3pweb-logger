@@ -7,11 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 ### Changed
+### Deprecated
+### Fixed
+### Removed
+### Security
+
+## [1.0.2] - 2019-11-20
+### Changed
 - (npm) published files are now whitelisted in package.json
 - (style) used standard linter
 - (npm) changed package name to @s3pweb/s3pweb-logger
-### Deprecated
-### Fixed
 ### Removed
 - (dependencies) removed unused console-hook
 ### Security
@@ -26,5 +31,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - (logstash) fixed socket reconnection mechanism
 
 [Unreleased]: https://github.com/s3pweb/s3pweb-logger/commits/
+[1.0.2]: https://github.com/s3pweb/s3pweb-logger/commits/v1.0.2
 [1.0.1]: https://github.com/s3pweb/s3pweb-logger/commits/v1.0.1
 [1.0.0]: https://github.com/s3pweb/s3pweb-logger/commits/v1.0.0
