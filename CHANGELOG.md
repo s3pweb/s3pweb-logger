@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 ### Changed
 - (npm) published files are now whitelisted in package.json
+- (style) used standard linter
 ### Deprecated
 ### Fixed
 ### Removed
