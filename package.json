@@ -1,13 +1,17 @@
 {
   "name": "s3pweb-logger",
   "version": "1.0.1",
-  "description": "",
+  "description": "A simple lib to log message using bunyan to console, file and logstash.",
   "main": "index.js",
   "scripts": {
     "linter": "./node_modules/.bin/standard --fix --verbose",
     "test": "npm run linter && NODE_ENV=test nyc ava"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:s3pweb/s3pweb-logger.git"
+  },
+  "author": "S3pweb",
   "license": "ISC",
   "dependencies": {
     "CBuffer": "2.0.0",
@@ -23,5 +27,9 @@
     "eslint-config-prettier": "6.4.0",
     "nyc": "14.1.1",
     "standard": "14.3.1"
-  }
+  },
+  "files": [
+    "/index.js",
+    "/lib"
+  ]
 }
