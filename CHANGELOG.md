@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - (npm) published files are now whitelisted in package.json
 - (style) used standard linter
+- (npm) changed package name to @s3pweb/s3pweb-logger
 ### Deprecated
 ### Fixed
 ### Removed
