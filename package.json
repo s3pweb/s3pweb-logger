@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "ava": "2.4.0",
-    "console-hook": "0.0.2",
     "eslint-config-prettier": "6.4.0",
     "nyc": "14.1.1",
     "standard": "14.3.1"
