@@ -1,1 +1,1 @@
-export { Logger } from './lib/logger';
+export { S3pwebLogger } from './lib/logger';

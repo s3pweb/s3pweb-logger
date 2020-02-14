@@ -2,10 +2,11 @@ import * as bunyan from 'bunyan';
 import * as RotatingFileStream from 'bunyan-rotating-file-stream';
 import * as mkdirp from 'mkdirp';
 import * as os from 'os';
+import Logger = require('bunyan');
 
-export class Logger {
-  private readonly bunyanLogger;
-  private readonly ringBuffer;
+export class S3pwebLogger {
+  private readonly bunyanLogger: Logger;
+  private readonly ringBuffer: Logger.RingBuffer;
 
   constructor(config) {
     this.bunyanLogger = bunyan.createLogger({
