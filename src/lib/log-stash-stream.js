@@ -21,7 +21,7 @@ const levels = new Map([
 /**
  * Creates a new instance of LogstashStream from the options.
  *
- * @param {objects} options The constructions options. See the constructor for details.
+ * @param {object} options The constructions options. See the constructor for details.
  * TODO: Improve this doc.
  *
  * @returns {LogstashStream} The bunyan stream that sends data to logstash
@@ -34,7 +34,7 @@ function createLogstashStream (options) {
  * This class implements the bunyan stream contract with a stream that
  * sends data to logstash.
  *
- * @param {objects} options The constructions options. See the constructor for details.
+ * @param {object} options The constructions options. See the constructor for details.
  * TODO: Improve this doc.
  *
  * @constructor
