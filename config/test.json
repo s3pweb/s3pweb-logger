@@ -1,7 +1,7 @@
 {
   "name": "s3pweb-logger",
   "logger": {
-    "source": false,
+    "source": true,
     "console": {
       "enable": true,
       "level": "debug"
@@ -13,9 +13,9 @@
       "addHostnameToPath": false
     },
     "server": {
-      "enable": false,
+      "enable": true,
       "level": "trace",
-      "url": "0.0.0.0",
+      "url": "192.168.10.56",
       "port": "9998",
       "type": "elk"
     },

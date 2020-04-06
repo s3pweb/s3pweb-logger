@@ -2,11 +2,12 @@ import * as bunyan from 'bunyan';
 import * as RotatingFileStream from 'bunyan-rotating-file-stream';
 import * as mkdirp from 'mkdirp';
 import * as os from 'os';
-import Logger = require('bunyan');
+
+import { LogstashStream } from './log-stash-stream';
 
 export class S3pwebLogger {
-  private readonly bunyanLogger: Logger;
-  private readonly ringBuffer: Logger.RingBuffer;
+  private readonly bunyanLogger: bunyan;
+  private readonly ringBuffer: bunyan.RingBuffer;
 
   constructor(config) {
     this.bunyanLogger = bunyan.createLogger({
@@ -74,8 +75,7 @@ export class S3pwebLogger {
         this.bunyanLogger.addStream({
           level: config.server.level,
           type: 'raw',
-          stream: require('./log-stash-stream')
-            .createStream({
+          stream: new LogstashStream({
               host: config.server.url,
               port: config.server.port,
               ringbuffer: this.ringBuffer,

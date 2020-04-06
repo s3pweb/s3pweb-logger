@@ -1,5 +1,7 @@
 const test = require('ava')
-const log = require('..').logger
+const Logger = require('../dist/index')
+
+const log = new Logger()
 
 test('test basic', (t) => {
   log.trace('toto')
