@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "linter": "./node_modules/.bin/standard --fix --verbose",
-    "test": "npm run linter && NODE_ENV=test nyc ava"
+    "test": "npm run linter && NODE_ENV=test nyc ava",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
     "ava": "^3.10.1",
     "eslint-config-prettier": "^6.11.0",
     "nyc": "^15.1.0",
-    "standard": "^14.3.4"
+    "standard": "^14.3.4",
+    "standard-version": "^8.0.2"
   },
   "files": [
     "/index.js",
