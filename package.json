@@ -15,7 +15,7 @@
   "author": "S3pweb",
   "license": "ISC",
   "dependencies": {
-    "CBuffer": "^2.1.0",
+    "CBuffer": "^2.2.0",
     "bunyan": "^1.8.14",
     "bunyan-rotating-file-stream": "1.6.3",
     "config": "^3.3.1",
