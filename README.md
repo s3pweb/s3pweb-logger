@@ -1,4 +1,4 @@
-<img alt="npm (scoped)" src="https://img.shields.io/npm/v/@s3pweb/s3pweb-logger">
+[![npm (scoped)](https://img.shields.io/npm/v/@s3pweb/s3pweb-logger)](https://www.npmjs.com/package/@s3pweb/s3pweb-logger)
 
 This is a simple lib to log message
 
