@@ -1,3 +1,5 @@
+<img alt="npm (scoped)" src="https://img.shields.io/npm/v/@s3pweb/s3pweb-logger">
+
 This is a simple lib to log message
 
 ## Latest release
