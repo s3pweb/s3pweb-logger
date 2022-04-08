@@ -19,7 +19,7 @@
     "bunyan": "^1.8.15",
     "bunyan-rotating-file-stream": "^1.6.3",
     "config": "^3.3.7",
-    "gelf-pro": "^1.3.5",
+    "gelf-pro": "^1.3.6",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
