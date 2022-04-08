@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "ava": "^4.1.0",
-    "eslint-config-prettier": "^8.3.0",
     "nyc": "^15.1.0",
     "standard": "^16.0.4",
     "standard-version": "^9.3.2"
