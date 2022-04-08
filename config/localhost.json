@@ -21,7 +21,7 @@
     },
     "ringBuffer": {
       "enable": true,
-      "size": 50
+      "size": 5
     }
   }
 }
