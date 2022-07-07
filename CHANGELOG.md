@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.0...v1.1.1) (2022-07-07)
+
+
+### Bug Fixes
+
+* **err:** improve errSerializer behaviour ([88b64f3](https://github.com/s3pweb/s3pweb-logger/commit/88b64f3b24f87ba4f1bf199d726c86b6bf2b2dfb))
+
 ## [1.1.0](https://github.com/s3pweb/s3pweb-logger/compare/v1.0.4...v1.1.0) (2022-04-08)
 
 
