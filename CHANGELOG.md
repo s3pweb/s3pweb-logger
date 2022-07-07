@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.1...v1.1.2) (2022-07-07)
+
+
+### Other
+
+* **deps:** recreate package-lock.json to resolve vulnerabilities ([017b516](https://github.com/s3pweb/s3pweb-logger/commit/017b5165a8f1bcd3d774d28f82aa2a2817177c68))
+
 ### [1.1.1](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.0...v1.1.1) (2022-07-07)
 
 
