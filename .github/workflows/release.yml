@@ -17,7 +17,8 @@ jobs:
     - run: npm ci
     - run: |
         LAST_TAG=`curl https://api.github.com/repos/s3pweb/s3pweb-logger/tags | jq -r '.[0].name'`
-        BODY=`node ./bin/createGitHubMessage.js`
+        npm install -g @s3pweb/release-message-creator
+        BODY=`create-github-message`
         curl -f -X POST -H "Authorization: token ${{secrets.TOKEN}}" \
           https://api.github.com/repos/s3pweb/s3pweb-logger/releases \
           -d '{"tag_name":"'"${LAST_TAG}"'","name":"Version '"${LAST_TAG#v}"'","body":'"${BODY}"', "draft":false}'
