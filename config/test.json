@@ -10,17 +10,17 @@
       "enable": true,
       "level": "trace",
       "dir": "./logs",
-      "addHostnameToPath": false
+      "addHostnameToPath": true
     },
     "server": {
-      "enable": false,
+      "enable": "true",
       "level": "trace",
       "url": "0.0.0.0",
       "port": "9998",
       "type": "elk"
     },
     "ringBuffer": {
-      "enable": false,
+      "enable": true,
       "size": 5
     }
   }

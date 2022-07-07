@@ -4,8 +4,8 @@
   "description": "A simple lib to log message using bunyan to console, file and logstash.",
   "main": "index.js",
   "scripts": {
-    "linter": "./node_modules/.bin/standard --fix --verbose",
-    "test": "npm run linter && NODE_ENV=test nyc ava",
+    "lint": "standard --fix --verbose",
+    "test": "NODE_ENV=test nyc --reporter=lcov --reporter=text ava",
     "release": "standard-version"
   },
   "repository": {
