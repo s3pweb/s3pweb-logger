@@ -1,6 +1,21 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [1.1.3](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.2...v1.1.3) (2023-01-20)
+
+
+### Other
+
+* add a .nvmrc file ([d6275e3](https://github.com/s3pweb/s3pweb-logger/commit/d6275e3b63c125921f7202679135d8d676cb14c4))
+* **deps-dev:** bump ava from 4.3.0 to 5.1.1 ([a5f2632](https://github.com/s3pweb/s3pweb-logger/commit/a5f2632a12e69adb04e1d5a244b4b1af8278f9c6))
+* **deps-dev:** bump standard from 16.0.4 to 17.0.0 ([393f37f](https://github.com/s3pweb/s3pweb-logger/commit/393f37fc4df8d55e856c87275e5583876f1e68d8))
+* **deps:** bump bunyan-rotating-file-stream from 1.6.3 to 2.0.3 ([5260ff0](https://github.com/s3pweb/s3pweb-logger/commit/5260ff0e80faed34b93365d094475771035ecf36))
+* **deps:** bump config from 3.3.7 to 3.3.9 ([1c2548b](https://github.com/s3pweb/s3pweb-logger/commit/1c2548b66cfd29e974481a31b7a33986c7d69b78))
+* **deps:** bump gelf-pro from 1.3.8 to 1.3.10 ([45b3a3c](https://github.com/s3pweb/s3pweb-logger/commit/45b3a3c117f57c67d92d0b1ac67ed776f195ca5b))
+* **deps:** bump json5 from 1.0.1 to 1.0.2 ([e74c266](https://github.com/s3pweb/s3pweb-logger/commit/e74c2660d15529ccddc60827ba0b569a2a49bb15))
+* **deps:** bump mkdirp from 1.0.4 to 2.1.3 ([382bdac](https://github.com/s3pweb/s3pweb-logger/commit/382bdacb6f22664ccbe23742603c4bf143b3f344))
+* update package-lock.json to version 2 ([6dd8ebe](https://github.com/s3pweb/s3pweb-logger/commit/6dd8ebe3f9ab0c03950061213b7082c447afbe85))
 
 ### [1.1.2](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.1...v1.1.2) (2022-07-07)
 
