@@ -1,6 +1,6 @@
 {
   "types": [
-    {"type": "build", "hidden": true},
+    {"type": "build", "section": "Other", "hidden": false},
     {"type": "ci", "hidden": true},
     {"type": "chore", "section": "Other", "hidden": false},
     {"type": "docs", "hidden": true},
