@@ -20,7 +20,7 @@
     "bunyan-rotating-file-stream": "^1.6.3",
     "config": "^3.3.7",
     "gelf-pro": "^1.3.6",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^2.1.3"
   },
   "devDependencies": {
     "ava": "^4.1.0",
