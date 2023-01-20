@@ -25,7 +25,7 @@
   "devDependencies": {
     "ava": "^5.1.1",
     "nyc": "^15.1.0",
-    "standard": "^16.0.4",
+    "standard": "^17.0.0",
     "standard-version": "^9.3.2"
   },
   "files": [
