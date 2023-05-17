@@ -7,16 +7,9 @@ This lib can send logs to the console, to a file or to a logstash instance.
 
     npm install @s3pweb/s3pweb-logger
 
-# Config
+# Configuration
 
-Configurations are stored in configuration files within your application, and can be overridden and extended by
-environment variables, command line parameters, or external sources. See : http://lorenwest.github.io/node-config/
-
-1. Create a config folder
-
-2. Create a file(s) with the name of your environment(s) like test.json
-
-3. Paste this configuration template :
+The constructor expect a config object following this format:
 
 ```json
 {
@@ -30,7 +23,8 @@ environment variables, command line parameters, or external sources. See : http:
     "file": {
       "enable": true,
       "level": "info",
-      "dir": "./logs"
+      "dir": "./logs",
+      "addHostnameToPath": true
     },
     "server": {
       "enable": true,
@@ -47,22 +41,19 @@ environment variables, command line parameters, or external sources. See : http:
 }
 ```
 
-4. Adapt values with your expectations
-
-# Example :
+# Example
 
 ```js
-const log = require('@s3pweb/s3pweb-logger').logger
-const { logger } = require('@s3pweb/s3pweb-logger')
+const Logger = require('@s3pweb/s3pweb-logger')
 
+const log = new Logger(config).get()
 const child = log.child({ child: 'childName' })
 
 log.info('one message from log')
-logger.info('one message from logger')
 child.info('one message from child')
 ```
 
-# Run example :
+# Tests
 
 Set the name of your environment with NODE_ENV=xxxx before node
 
@@ -70,7 +61,7 @@ Set the name of your environment with NODE_ENV=xxxx before node
 NODE_ENV=test node example/example.js
 ```
 
-# Bonus :
+# Bonus
 
 To start a ELK stack on docker :
 

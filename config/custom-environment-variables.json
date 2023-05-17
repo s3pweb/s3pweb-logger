@@ -9,7 +9,8 @@
     "file": {
       "enable": "LOGGER_FILE_ENABLE",
       "level": "LOGGER_FILE_LEVEL",
-      "dir": "LOGGER_FILE_DIR"
+      "dir": "LOGGER_FILE_DIR",
+      "addHostnameToPath": "LOGGER_FILE_ADD_HOSTNAME"
     },
     "server": {
       "enable": "LOGGER_SERVER_ENABLE",

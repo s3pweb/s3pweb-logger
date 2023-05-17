@@ -1,13 +1,17 @@
 const test = require('ava')
-const log = require('..').logger
+const Logger = require('..')
+
+const config = require('../config/test.json')
+
+const log = new Logger(config).get()
 
 test('test basic', (t) => {
-  log.trace('toto')
-  log.debug('toto')
-  log.info('toto')
-  log.warn('toto')
-  log.error('toto')
-  log.fatal('toto')
+  log.trace('trace')
+  log.debug('debug')
+  log.info('info')
+  log.warn('warn')
+  log.error('error')
+  log.fatal('fatal')
 
   t.pass()
 })
@@ -15,12 +19,12 @@ test('test basic', (t) => {
 test('test child', (t) => {
   const childLog = log.child({ child: 'childLog' })
 
-  childLog.trace('msg child')
-  childLog.debug('msg child')
-  childLog.info('msg child')
-  childLog.warn('msg child')
-  childLog.error('msg child')
-  childLog.fatal('msg child')
+  childLog.trace('trace child')
+  childLog.debug('debug child')
+  childLog.info('info child')
+  childLog.warn('warn child')
+  childLog.error('error child')
+  childLog.fatal('fatal child')
 
   t.pass()
 })
