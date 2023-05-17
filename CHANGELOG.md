@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.3...v2.0.0) (2023-05-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ovh:** remove OVH logger
+* **logger:** remove mandatory use of node-config
+
+### Features
+
+* **logger:** remove mandatory use of node-config ([c1455db](https://github.com/s3pweb/s3pweb-logger/commit/c1455db2a3b7ac364428c1313ca514be01dd50ec))
+* **ovh:** remove OVH logger ([2d0db1f](https://github.com/s3pweb/s3pweb-logger/commit/2d0db1f8cb2b4c0562e89f89574458e1976f64f8))
+
+
+### Other
+
+* **deps-dev:** bump ava from 5.1.1 to 5.2.0 ([fba8162](https://github.com/s3pweb/s3pweb-logger/commit/fba8162fad763ba25fd20caced1c381da1cb0bf1))
+* **deps-dev:** bump commit-and-tag-version from 11.0.0 to 11.1.0 ([baf565d](https://github.com/s3pweb/s3pweb-logger/commit/baf565d0b34df4a1a00d70dc4334c1144c8059ae))
+* **deps:** bump mkdirp from 2.1.3 to 2.1.5 ([c025bce](https://github.com/s3pweb/s3pweb-logger/commit/c025bce0f0c8e3b0f979c27dbce32b6f08d7e322))
+* **deps:** update all dependencies ([087f315](https://github.com/s3pweb/s3pweb-logger/commit/087f31528aa2278a2c3553f6da0f3c54c0093861))
+
 ## [1.1.3](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.2...v1.1.3) (2023-01-20)
 
 
