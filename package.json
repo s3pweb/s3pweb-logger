@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "ava": "^5.2.0",
-    "commit-and-tag-version": "^11.2.1",
+    "commit-and-tag-version": "^12.0.0",
     "nyc": "^15.1.0",
     "standard": "^17.0.0"
   },
