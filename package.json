@@ -21,7 +21,7 @@
     "mkdirp": "^3.0.1"
   },
   "devDependencies": {
-    "ava": "^5.2.0",
+    "ava": "^6.0.0",
     "commit-and-tag-version": "^11.2.1",
     "nyc": "^15.1.0",
     "standard": "^17.0.0"
