@@ -1,7 +1,6 @@
 {
   "name": "APP_NAME",
   "logger": {
-    "source": "LOGGER_SOURCE",
     "console": {
       "enable": "LOGGER_CONSOLE_ENABLE",
       "level": "LOGGER_CONSOLE_LEVEL"

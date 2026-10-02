@@ -1,8 +1,9 @@
-const log = require('..').logger
-const { logger } = require('..')
+const Logger = require('..')
 
+const config = require('../config/default.json')
+
+const log = new Logger(config).get()
 const child = log.child({ child: 'childName' })
 
 log.info('one message from log')
-logger.info('one message from logger')
-child.info('one message from child')
+child.info({ uuid: 'f0e1c2d3' }, 'one message from child')

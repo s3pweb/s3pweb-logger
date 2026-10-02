@@ -1,10 +1,12 @@
 {
   "name": "@s3pweb/s3pweb-logger",
   "version": "2.0.0",
-  "description": "A simple lib to log message using bunyan to console, file and logstash.",
+  "description": "A simple lib to log message using pino to console, file and logstash.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "lint": "standard --fix --verbose",
+    "typecheck": "tsc",
     "test": "NODE_ENV=test nyc --reporter=lcov --reporter=text ava",
     "release": "commit-and-tag-version -s"
   },
@@ -14,20 +16,24 @@
   },
   "author": "S3pweb",
   "license": "ISC",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
-    "bunyan": "^1.8.15",
-    "bunyan-rotating-file-stream": "^2.0.3",
-    "CBuffer": "^2.2.0",
-    "mkdirp": "^3.0.1"
+    "pino": "^10.3.1",
+    "pino-roll": "^4.0.0"
   },
   "devDependencies": {
-    "ava": "^5.2.0",
-    "commit-and-tag-version": "^11.2.1",
-    "nyc": "^15.1.0",
-    "standard": "^17.0.0"
+    "@types/node": "^24.19.1",
+    "ava": "^8.0.1",
+    "commit-and-tag-version": "^13.2.1",
+    "nyc": "^18.0.0",
+    "standard": "^17.1.2",
+    "typescript": "^7.0.2"
   },
   "files": [
     "/index.js",
+    "/index.d.ts",
     "/lib"
   ]
 }
