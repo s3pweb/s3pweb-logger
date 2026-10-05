@@ -1,6 +1,6 @@
 {
   "name": "@s3pweb/s3pweb-logger",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A simple lib to log message using pino to console, file and logstash.",
   "main": "index.js",
   "types": "index.d.ts",

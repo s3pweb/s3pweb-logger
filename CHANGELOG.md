@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [3.0.0](https://github.com/s3pweb/s3pweb-logger/compare/v2.0.0...v3.0.0) (2026-10-05)
+
+### ⚠ BREAKING CHANGES
+
+* **logger:** requires Node.js 22 or later. get() returns a pino logger
+  instead of a bunyan logger, logger.source is ignored, and log files are
+  named <name>_all.<yyyy-MM-dd>.<n>.log, without gzip or total size limit.
+
+### Other
+
+* **deps-dev:** bump @babel/traverse from 7.21.5 to 7.23.2 ([b0785da](https://github.com/s3pweb/s3pweb-logger/commit/b0785dabdc039c8568bf506e9282a83f4dd73319))
+* **deps-dev:** bump ava from 5.2.0 to 5.3.1 ([a6cee17](https://github.com/s3pweb/s3pweb-logger/commit/a6cee172531a18a0b9829099f77cf7293fe38000))
+* **deps-dev:** bump commit-and-tag-version from 11.2.1 to 11.2.2 ([743f63c](https://github.com/s3pweb/s3pweb-logger/commit/743f63cb1134813a3955a9e3a3869ca8083826de))
+* **deps-dev:** bump commit-and-tag-version from 11.2.2 to 11.2.4 ([68a5d91](https://github.com/s3pweb/s3pweb-logger/commit/68a5d9143d809f31331dcb70ca7d08ff579be47b))
+* **deps-dev:** bump commit-and-tag-version from 11.2.4 to 11.3.0 ([11ef07f](https://github.com/s3pweb/s3pweb-logger/commit/11ef07f0cd87325150e8f2ea1bd2259bcc9ae4a8))
+* **deps-dev:** bump standard from 17.0.0 to 17.1.0 ([d21d9dd](https://github.com/s3pweb/s3pweb-logger/commit/d21d9dd512f0dc549069d8379ee0cc887c6e72ac))
+* **deps-dev:** bump word-wrap from 1.2.3 to 1.2.4 ([81e09fe](https://github.com/s3pweb/s3pweb-logger/commit/81e09fe564b8dc7a2869022ae9c534b31ce42c36))
+* **deps:** bump bunyan-rotating-file-stream from 2.0.3 to 2.0.5 ([09ac032](https://github.com/s3pweb/s3pweb-logger/commit/09ac032d023bc7b3514663e21663ca62de741344))
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([fa9eae0](https://github.com/s3pweb/s3pweb-logger/commit/fa9eae0391d56bda34155e05b9c9b9de1f58dc01))
+
+### Features
+
+* **logger:** replace bunyan with pino ([a6e6c05](https://github.com/s3pweb/s3pweb-logger/commit/a6e6c056b66bdd2138ecbdfe8f6ab01b606730a0))
+
 ## [2.0.0](https://github.com/s3pweb/s3pweb-logger/compare/v1.1.3...v2.0.0) (2023-05-17)
 
 
