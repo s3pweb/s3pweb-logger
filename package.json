@@ -24,7 +24,7 @@
     "pino-roll": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.19.1",
+    "@types/node": "^26.6.4",
     "ava": "^8.0.1",
     "commit-and-tag-version": "^13.2.1",
     "nyc": "^18.0.0",
