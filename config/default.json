@@ -1,7 +1,6 @@
 {
   "name": "s3pweb-logger",
   "logger": {
-    "source": true,
     "console": {
       "enable": true,
       "level": "debug"

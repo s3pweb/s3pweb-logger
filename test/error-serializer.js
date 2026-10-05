@@ -1,4 +1,4 @@
-const test = require('ava')
+const { default: test } = require('ava')
 const errSerializer = require('../lib/errSerializer').errSerializer
 
 test('should not fail', (t) => {

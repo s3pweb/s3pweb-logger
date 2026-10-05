@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "module": "nodenext",
+    "types": ["node"]
+  },
+  "include": ["index.d.ts", "lib", "test/types.ts"]
+}
