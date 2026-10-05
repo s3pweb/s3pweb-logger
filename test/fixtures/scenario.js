@@ -23,6 +23,14 @@ const scenarios = {
     log.info({ uuid: 'u1' }, 'count %d', 3)
     log.info('a %s', 'b', 'c')
   },
+  nonStringMessage () {
+    // How NestJS logs an unhandled exception through @s3pweb/nestjs-common
+    log.error({ child: 'ExceptionsHandler' }, new Error('unhandled'))
+    log.info(42)
+    log.info({ uuid: 'u3' }, { nested: true })
+    log.warn({ uuid: 'u4' }, undefined)
+    log.info(['a', 'b'])
+  },
   error () {
     log.error(new Error('boom'))
     log.error({ err: new Error('inner'), uuid: 'u2' }, 'with message')

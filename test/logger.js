@@ -54,6 +54,17 @@ test('should format extra arguments like bunyan', async (t) => {
   t.is(lines[2].msg, 'a b c')
 })
 
+test('should format non-string messages like bunyan', async (t) => {
+  const { lines } = await run(consoleConfig('info'), 'nonStringMessage')
+
+  t.is(lines[0].child, 'ExceptionsHandler')
+  t.regex(lines[0].msg, /^Error: unhandled\n {4}at /)
+  t.is(lines[1].msg, '42')
+  t.like(lines[2], { uuid: 'u3', msg: '{ nested: true }' })
+  t.like(lines[3], { uuid: 'u4', msg: 'undefined' })
+  t.is(lines[4].msg, "[ 'a', 'b' ]")
+})
+
 test('should serialize errors', async (t) => {
   const { lines } = await run(consoleConfig('info'), 'error')
 
