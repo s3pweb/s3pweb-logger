@@ -8,6 +8,7 @@ const fixture = path.join(__dirname, '..', 'fixtures', 'scenario.js')
 
 /**
  * Runs a scenario of test/fixtures/scenario.js in a child process and returns its stdout as parsed lines.
+ * The raw stdout is returned too: JSON.parse hides duplicate keys.
  */
 async function run (config, scenario) {
   const {
@@ -16,7 +17,7 @@ async function run (config, scenario) {
   } = await util.promisify(execFile)(process.execPath, [fixture, JSON.stringify(config), scenario], {
     timeout: 10000
   })
-  return { lines: parseLines(stdout), stderr }
+  return { lines: parseLines(stdout), stdout, stderr }
 }
 
 function parseLines (output) {

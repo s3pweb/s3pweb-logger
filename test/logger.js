@@ -46,6 +46,18 @@ test('should add child fields', async (t) => {
   t.like(lines[0], { child: 'childLog', uuid: 'abc', msg: 'from child' })
 })
 
+test('should override bound fields like bunyan', async (t) => {
+  const { lines, stdout } = await run(consoleConfig('info'), 'overrideBindings')
+
+  t.notRegex(stdout, /"(child|uuid)":.*"\1":/, 'a field is duplicated in the JSON')
+  t.like(lines[0], { child: 'RoutesResolver', msg: 'call field' })
+  t.false('child' in lines[1])
+  t.like(lines[2], { child: 'AppController', uuid: 'u2', msg: 'child binding' })
+  t.like(lines[3], { child: 'AppController', uuid: 'u4', msg: 'set bindings' })
+  t.like(lines[4].bindings, { application: 'test-app', child: 'AppController', uuid: 'u4' })
+  t.is(lines.length, 5)
+})
+
 test('should format extra arguments like bunyan', async (t) => {
   const { lines } = await run(consoleConfig('info'), 'format')
 
